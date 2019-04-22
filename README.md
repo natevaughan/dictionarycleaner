@@ -1,7 +1,7 @@
-# Dictionary Cleaner
-Recursive function to remove keys in two dictionaries in Python
+# Dictionary Cleaner 
+Recursive function to remove keys from a dictionary in Python
 
-Use case: removing fields from dictionaries prior to using deepdiff
+Use case: removing fields from a dictionary prior to using deepdiff
 
 ## Requirements
  - Python 3
@@ -11,5 +11,5 @@ Example: Remove key "bar" and associated values (if they exist) in either of two
 ```
 import cleaner
 
-cleaner.remove_keys({"foo":123}, {"foo":123, "bar":456}, {"bar":True})
+cleaner.remove_keys({"foo":123, "bar":456}, {"bar":True}) # output {"foo": 123}
 ```
